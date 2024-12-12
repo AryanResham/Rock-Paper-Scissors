@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Rock Paper Scissors</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="functions.js"></script>
+    </head>
+    <body>
+        <div style = 'border: 2px dashed white; padding: 10px'>
+            <div style = 'margin-bottom: 20px; text-align: center;'>
+                    <p>Rock Paper Scissors</p>
+                <div class = 'icons'>
+                    <abbr title="Rock"><button style = 'margin-left:20px;' onclick="playRound('R')">✊</button></abbr>
+                    <abbr title="Paper"><button onclick="playRound('P')">🖐️</button></abbr>
+                    <abbr title="Scissors"><button onclick="playRound('S')">✌️</button></abbr>
+                </div>
+            </div>
+            
+            <div class = "move">
+                <div>
+                    <p>Your Move: </p><p id="playerMove"></p>
+                </div>
+                <div>
+                    <p>Computer's Move: </p><p id="computerMove"></p>
+                </div>
+            </div>
+            
+            <div id = 'result'>
+                <p></p>
+            </div>
+
+            <div class = 'score'>
+                <p id = 'wins'>Wins:</p>
+                <p id = 'losses'>Losses:</p>
+                <p id = 'ties'>Draws:</p>
+            </div> 
+            <button class = 'reset' onclick="resetScore()">Reset Score</button>
+        </div>
+    </body>
+</html>
